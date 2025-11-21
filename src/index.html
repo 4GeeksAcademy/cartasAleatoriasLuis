@@ -1,35 +1,49 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Final championship</title>
+
+  <!-- Fontawesome is our recomended library for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Write your HTML code here, you can delete everything withing the body tags -->
+  <div class="container-fluid text-center">
+    <h1 class="mt-5">Welcome final championship of rock, paper, scissors, lizard, spock</h1><br>
+    <h2>Choose your move</h2><br>
+  </div>
+  <div class="d-flex gap-3 justify-content-center">
+    <div type="button" class="btn btn-secondary" onclick="play('rock')">ROCK <i
+        class="fa-regular fa-hand-back-fist"></i></div>
+    <div type="button" class="btn btn-primary" onclick="play('paper')">PAPER <i class="fa-regular fa-hand"></i></div>
+    <div type="button" class="btn btn-warning" onclick="play('scissors')">SCISSORS <i
+        class="fa-regular fa-hand-scissors"></i></div>
+    <div type="button" class="btn btn-success" onclick="play('lizard')">LIZARD <i class="fa-regular fa-hand-lizard"></i>
     </div>
+    <div type="button" class="btn btn-info" onclick="play('spock')">SPOCK <i class="fa-regular fa-hand-spock"></i></div>
+  </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+  <div class="container-fluid text-center bg-success bg-opacity-25 rounded" style="width: 24rem;">
+    <h3>User choice: <span id="user"></span></h3>
+    <h3>Machine choice: <span id="machine"></span></h3>
+    <h2>Winner: <span class="text-center" id="result"></span></h2>
+  </div>
+
+
+  <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+  <script type="module" src="/app.js"></script>
+
+</body>
+
 </html>

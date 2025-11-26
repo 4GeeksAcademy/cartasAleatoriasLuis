@@ -8,32 +8,6 @@ const rules = {
   spock: ["scissors", "rock"]
 }
 
-
-// ------------------JUEGA EN LA CONSOLA--------------------------
-// function playWithCmd(userChoice) {
-
-//   const machineChoice = Math.floor(Math.random() * choises.length)
-//   const machineChoiceValor = choises[machineChoice]
-
-//   if (userChoice === machineChoiceValor) {
-//     return console.log('User choise: ' + userChoice + '\n'
-//       + 'Machine choise: ' + machineChoiceValor + '\n'
-//       + 'Tie');
-
-//   } else if (rules[userChoice].includes(machineChoiceValor)) {
-//     return console.log('User choise: ' + userChoice + '\n'
-//       + 'Machine choise: ' + machineChoiceValor + '\n'
-//       + 'User Win');
-
-//   } else {
-//     return console.log('User choise: ' + userChoice + '\n'
-//       + 'Machine choise: ' + machineChoiceValor + '\n'
-//       + 'Machine Win');
-//   }
-// }
-
-// playWithCmd('rock');
-
 const icons = {
   rock: '<i class="fa-regular fa-hand-back-fist"></i>',
   paper: '<i class="fa-regular fa-hand"></i>',
@@ -41,8 +15,6 @@ const icons = {
   lizard: '<i class="fa-regular fa-hand-lizard"></i>',
   spock: '<i class="fa-regular fa-hand-spock"></i>'
 };
-
-// ---------------------JUEGA EN LA WEB----------------------
 
 function play(userChoice) {
 
@@ -55,15 +27,10 @@ function play(userChoice) {
   let resultado
 
   if (userChoice === machineChoiceValor) {
-
     resultado = "Tie";
-
   } else if (rules[userChoice].includes(machineChoiceValor)) {
-
     resultado = "The User";
-
   } else {
-
     resultado = "The Machine";
   }
 

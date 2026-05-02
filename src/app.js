@@ -27,4 +27,4 @@ function generateCard() {
   document.querySelector(".bottom").innerHTML = icons[randomSuit];
    document.querySelector(".number").innerHTML = randomValue;
 }
-
+document.querySelector("#generate").addEventListener("click", generateCard);
